@@ -14,6 +14,12 @@ fixtures = [
                 "custom_approved_by_signature"
             ]]
         ]
+    },
+    {
+        "dt": "Server Script",
+        "filters": [
+            ["name", "=", "Add Signature After Submit PO"]
+        ]
     }
 ]
 

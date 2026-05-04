@@ -1,0 +1,21 @@
+[
+ {
+  "allow_guest": 0,
+  "api_method": null,
+  "cron_format": null,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Server Script",
+  "doctype_event": "Before Save",
+  "enable_rate_limit": 0,
+  "event_frequency": "All",
+  "modified": "2026-04-27 12:54:00.807705",
+  "module": null,
+  "name": "Add Signature After Submit PO",
+  "rate_limit_count": 5,
+  "rate_limit_seconds": 86400,
+  "reference_doctype": "Purchase Order",
+  "script": "if doc.workflow_state == \"Approved\":\r\n\r\n    if not doc.custom_approved_by_signature:\r\n\r\n        user = frappe.session.user\r\n\r\n        signature = frappe.db.get_value(\r\n            \"Approval Signature Settings\",\r\n            {\r\n                \"approver_user\": user\r\n            },\r\n            \"signature\"\r\n        )\r\n\r\n        if signature:\r\n            doc.custom_approved_by_signature = signature",
+  "script_type": "DocType Event"
+ }
+]
