@@ -5,6 +5,18 @@ app_description = "ASM"
 app_email = "duxnandkishorkochkar@gmail.com"
 app_license = "mit"
 
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["dt", "=", "Purchase Order"],
+            ["fieldname", "in", [
+                "custom_approved_by_signature"
+            ]]
+        ]
+    }
+]
+
 # Apps
 # ------------------
 
