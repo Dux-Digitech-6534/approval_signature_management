@@ -6,38 +6,40 @@ app_email = "duxnandkishorkochkar@gmail.com"
 app_license = "mit"
 
 fixtures = [
+
+    # 1. Custom Field (Purchase Order)
     {
         "dt": "Custom Field",
         "filters": [
-            ["dt", "=", "Purchase Order"]
+            ["name", "=", "Purchase Order-custom_approved_by_signature"]
         ]
     },
-    {
-        "dt": "Client Script",
-        "filters": [
-            ["dt", "=", "Approval Signature Settings"]
-        ]
-    },
+
+    # 2. Server Script
     {
         "dt": "Server Script",
         "filters": [
-            ["reference_doctype", "=", "Purchase Order"]
+            ["name", "=", "Add Signature After Submit PO"]
         ]
     },
+
+    # 3. Client Script
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["name", "=", "Signature Setting"]
+        ]
+    },
+
+    # 4. Workflow
     {
         "dt": "Workflow",
         "filters": [
-            ["document_type", "=", "Purchase Order"]
+            ["name", "=", "GHRaisoni Workflow"]
         ]
-    },
-    {
-        "dt": "Workflow State"
-    },
-    {
-        "dt": "Workflow Action Master"
     }
-]
 
+]
 # Apps
 # ------------------
 
