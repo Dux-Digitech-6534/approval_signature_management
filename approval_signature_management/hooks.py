@@ -9,17 +9,32 @@ fixtures = [
     {
         "dt": "Custom Field",
         "filters": [
-            ["dt", "=", "Purchase Order"],
-            ["fieldname", "in", [
-                "custom_approved_by_signature"
-            ]]
+            ["dt", "=", "Purchase Order"]
+        ]
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["dt", "=", "Approval Signature Settings"]
         ]
     },
     {
         "dt": "Server Script",
         "filters": [
-            ["name", "=", "Add Signature After Submit PO"]
+            ["reference_doctype", "=", "Purchase Order"]
         ]
+    },
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["document_type", "=", "Purchase Order"]
+        ]
+    },
+    {
+        "dt": "Workflow State"
+    },
+    {
+        "dt": "Workflow Action Master"
     }
 ]
 

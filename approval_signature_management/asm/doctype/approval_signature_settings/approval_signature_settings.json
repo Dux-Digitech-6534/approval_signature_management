@@ -8,7 +8,6 @@
  "field_order": [
   "approver_user",
   "designation",
-  "department",
   "column_break_mrbb",
   "approver_name",
   "company",
@@ -25,11 +24,6 @@
    "fieldname": "designation",
    "fieldtype": "Data",
    "label": "Designation"
-  },
-  {
-   "fieldname": "department",
-   "fieldtype": "Data",
-   "label": "Department"
   },
   {
    "fieldname": "column_break_mrbb",
@@ -55,7 +49,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-04 16:07:57.383460",
+ "modified": "2026-05-04 17:01:33.171197",
  "modified_by": "Administrator",
  "module": "ASM",
  "name": "Approval Signature Settings",
