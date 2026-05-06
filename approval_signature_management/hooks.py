@@ -37,8 +37,24 @@ fixtures = [
         "filters": [
             ["name", "=", "GHRaisoni Workflow"]
         ]
-    }
+    },
 
+
+    # Material Request Workflow
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["name", "=", "Material Request Approval Company Wise"]
+        ]
+    },
+
+    # Company Custom Field
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "=", "Company-custom_location_type"]
+        ]
+    }
 ]
 # Apps
 # ------------------
