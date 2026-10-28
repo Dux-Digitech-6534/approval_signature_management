@@ -40,14 +40,6 @@ fixtures = [
     },
 
 
-    # Material Request Workflow
-    {
-        "dt": "Workflow",
-        "filters": [
-            ["name", "=", "Material Request Approval Company Wise"]
-        ]
-    },
-
     # Company Custom Field
     {
         "dt": "Custom Field",
